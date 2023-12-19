@@ -1,0 +1,27 @@
+---
+interface Props {
+    CTA: string; 
+	CTALink: string;
+}
+
+const { CTA, CTALink } = Astro.props;
+---
+
+<a class="button" href={CTALink}>{CTA}</a>
+
+<style>
+    .button{
+        background-color:black;
+        padding: 0.5rem 1rem;
+        color: white;
+        height: 100%;
+        text-decoration: none;
+        transition: background-color ease-in 0.25s;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+
+    }
+    .button:hover {
+        background-color:green;
+    }
+</style>

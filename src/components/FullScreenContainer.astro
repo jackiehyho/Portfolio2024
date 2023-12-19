@@ -1,0 +1,62 @@
+---
+interface Props {
+	title: string;
+	subheader: string;
+    CTA: string; 
+	CTALink: string;
+
+}
+
+const { title, subheader, CTA, CTALink} = Astro.props;
+
+import Button from "./Button.astro"
+---
+
+<section class="container-full">
+    <div class="container-Content">
+        <div class="container-Text">
+            <h1 class="container-header">{title}</h1>
+            <h2 class="container-subheader">{subheader}</h2>
+        </div>
+    </div>
+    <div class="container-CTA">
+        <Button class="container-button" CTA={CTA} CTALink={CTALink} />
+    </div>
+ 
+
+
+</section>
+
+<style>
+	.container-full {
+        padding: 0;
+        margin: 0;
+        height: calc(100vh - var(--headerHeight));
+        width: 100vw;
+        background-color: lightGrey;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-Text {
+        text-align:center;
+    }
+    
+    .container-CTA {
+        margin-top: 2rem;
+    }
+
+    .container-header{
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-subheader{
+        padding: 0;
+        margin: 0;
+    }
+</style>
