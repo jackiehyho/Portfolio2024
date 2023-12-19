@@ -1,0 +1,35 @@
+---
+interface Props {
+	title: string;
+	subtitle: string;
+    CTA: string; 
+	CTALink: string;
+}
+
+const { title, subtitle, CTA, CTALink } = Astro.props;
+---
+
+<ul id="footer-social" class="social-media-list">
+    <li class="social-media-icon"></li>
+    <li class="social-media-icon"></li>
+    <li class="social-media-icon"></li>
+    <li class="social-media-icon"></li>
+</ul>
+
+<style>
+ .social-media-list{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .social-media-icon{
+        width: 48px;
+        height: 48px;
+        background-color:white;
+        margin: 0.25rem;
+    }
+</style>

@@ -1,0 +1,28 @@
+---
+interface Props {
+    CTA: string; 
+	CTALink: string;
+}
+
+const { CTA, CTALink } = Astro.props;
+---
+
+<nav>
+<ul class="nav-list"">
+    <li class="nav-list-item"><a class="nav-list-link" href="">Link 1</a></li>
+    <li class="nav-list-item"><a class="nav-list-link" href="">Link 1</a></li>
+    <li class="nav-list-item"><a class="nav-list-link" href="">Link 1</a></li>
+</ul>
+</nav>
+<style>
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.nav-list-item {
+    padding: 0.25rem;
+}
+</style>

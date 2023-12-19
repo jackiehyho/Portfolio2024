@@ -1,0 +1,32 @@
+---
+interface Props {
+
+CTA: string; 
+CTALink: string;
+}
+
+const { CTA, CTALink } = Astro.props;
+
+import Navigation from "../components/Navigation.astro"
+---
+
+<header>
+<div class="logo"></div><Navigation />
+</header>
+
+<style>
+header {
+    background-color:white;
+    padding-left: 1rem;
+    display:flex;
+    align-items: center;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+}
+
+
+</style>
