@@ -11,10 +11,18 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.3",
+    "@astrojs/react": "^3.0.7",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
     "astro": "^4.0.6",
+    "astro-sanity": "^1.1.7",
     "node": "^21.2.0",
     "noode": "^0.0.63",
+    "normalize.css": "^8.0.1",
     "npm": "^10.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.1",
     "typescript": "^5.3.3"
   }
 }
